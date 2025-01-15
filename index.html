@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.first-card {
+  background-color: transparent;
+  width: 222px;
+  height: 400px;
+  perspective: 1000px;
+  float:left;
+  transition: transform 2s;
+
+}
+.second-card {
+  background-color: transparent;
+  width: 222px;
+  height: 400px;
+  perspective: 1000px;
+  float:left;
+  margin: 0 1.5%;
+  transition: transform 2s;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 222px;
+  height: 400px;
+  perspective: 1000px;
+  float: left;
+  margin: 0 1.5%;
+  transition: transform 2s;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner  {
+  transform: rotateY(180deg);
+      transition: transform 0.6s;
+
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.first-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.second-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  
+  
+  
+}
+.hide {
+  clear: both;
+  opacity:0%;
+  transition: opacity 100s; 
+
+
+}
+
+
+
+.flip-card:hover + .hide,  .flip-card:active + .hide{
+  opacity:100%;
+  color: black;
+  transition: opacity 2s;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Your March Tarot Prompt</h1>
+<h3>Hover over the card below to reveal your prompt:</h3>
+
+
+<div class="first-card">
+	<div class="first-card-front">
+		<img src="January.png" alt="The HighPriestess" style="width:222px;height:400px;">
+	</div>
+</div>
+	
+<div class="second-card">
+	<div class="second-card-front">
+		<img src="February.png" alt="TheLovers" style="width:222px;height:400px;">
+	</div>
+</div>
+
+
+<div class="flip-card">
+
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Back.png" alt="BackSide" style="width:222px;height:400px;">
+
+    </div>
+    <div class="flip-card-back">
+		<img src="March.png" alt="FrontSide" style="width:222px;height:400px;">
+    </div>
+  </div>
+</div>
+<div class="hide"><br></br>The Devil shows us powerlessness and brings to light the forces that restrain us. This card can also show us what restrictions we've placed on ourselves. Are we holding back our best self? When reversed, The Devil shows us it is time to break out of our chains and remove limiting beliefs and expectations put on us!<p><b>Challenge: You drew the upright Devil. Create a routine that shows your audience how you feel or have felt restricted!<b></p></div>
+
+
+	
+
+
+
+
+</body>
+</html>
